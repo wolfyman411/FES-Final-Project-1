@@ -71,6 +71,11 @@ h3 {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 /*NAV*/
 
 nav {
@@ -475,4 +480,186 @@ header .row {
     margin-top: 16px;
     line-height: 1.625;
     color: #718096;
+}
+
+/*PRICING*/
+
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing h3 {
+    text-align: center;
+}
+
+#pricing .section__para {
+    max-width: 576px;
+    text-align: center;
+}
+
+.pricing__cards {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pricing__card {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.pricing__card--stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.pricing__card--top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+.pricing__card--mid {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 2rem;
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.pricing__card--bot {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pricing__card--type, .pricing__card--cost, .pricing__card--monthly {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.pricing__card--type {
+    font-size: 20px;
+}
+
+.pricing__card--cost {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.pricing__card--monthly {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #a0aec0;
+}
+
+.pricing__card--sub {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+}
+
+.pricing__card--features {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pricing__card--btn {
+    border-radius: 0.25rem;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.pricing__blob {
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+}
+
+/*CARD 2*/
+.pricing__card:nth-child(2){
+
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+
+    .pricing__card--stripe {
+        display: none;
+    }
+
+    .pricing__card--type, .pricing__card--cost, .pricing__card--monthly, .pricing__card--sub, .pricing__card--features {
+        color: white;
+    }
+
+    .pricing__card--btn {
+        background: white;
+        color: #6415ff;
+    }
+
+    .pricing__card--mid {
+            border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+    }
+}
+
+/*CARD 3*/
+.pricing__card:nth-child(3){
+
+    .pricing__card--stripe {
+        background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    }
+
+    .pricing__card--btn {
+            background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%)
+    }
 }
