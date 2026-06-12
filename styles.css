@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    color: #243e63;
+}
+
 section {
     padding: 0 32px;
 }
@@ -173,6 +177,7 @@ nav {
 }
 
 .btn__menu {
+    font-size: 24px;
     background-color: transparent;
     border: none;
     display: none;
@@ -609,7 +614,6 @@ header .row {
 .value__tag--title {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .value__tag--name {
@@ -1228,6 +1232,20 @@ footer {
         width: calc(50%);
     }
 
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+
+    .feature__title {
+        letter-spacing: 0.025em;
+        line-height: 1;
+    }
+
+    .feature__para {
+        max-width: none;
+    }
+
     .value__tags {
         max-width: 20rem;
         flex-direction: column;
@@ -1312,6 +1330,9 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
     }
 
     .features {
@@ -1321,6 +1342,16 @@ footer {
     .feature {
         width: auto;
         max-width: 384px;
+    }
+
+    .feature__para {
+        margin-top: 4px;
+        line-height: 2;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
     }
 
     .feature__row {
@@ -1386,6 +1417,7 @@ footer {
 
     .value__tag--title {
         text-align: center;
+        justify-content: center;
     }
 
     #testimonials .container {
